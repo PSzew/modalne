@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="modalne.MainPage">
+
+    <StackLayout>
+        <Label Margin="10,70,10,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Modal " TextColor="Red" FontSize="15"/>
+                    <Span Text="zakrywa cały aktualny widok aplikacji mobilnej aby utworzyć modala w Xamarin.Forms wystarczy stworzyć Content Page i wywołać go z innej strony"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <Button Text="Strona Modalna" Clicked="Button_Clicked" Margin="10,100,10,0"/>
+        
+        <Label Text="Pop-upy jako alert" HorizontalOptions="CenterAndExpand" Margin="0,100,0,0" FontSize="20"/>
+        
+        <Button Text="DISPLAYALERT" Clicked="alert" Margin="10,75,10,0"/>
+        <Button Text="DISPLAYACTIONSHEET" Clicked="sheet" Margin="10,5,10,0"/>
+        <Button Text="DISPLAYPROMPT" Clicked="prompt" Margin="10,5,10,0"/>
+
+    </StackLayout>
+
+</ContentPage>

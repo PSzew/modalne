@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="modalne.ModalPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Strona modalna, " TextColor="Red" FontSize="15"/>
+                        <Span Text="Welcome to Xamarin.Forms!"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text="WSTECZ" Clicked="backbtn" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
